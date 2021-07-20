@@ -22,4 +22,3 @@ app.get('/:id', async (req, res) => {
 
 // export 'app'
 module.exports = app
-app.listen(4000)

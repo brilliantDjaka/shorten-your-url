@@ -40,4 +40,3 @@ app.post('/url', async (req, res) => {
 
 // export 'app'
 module.exports = app;
-app.listen(3999)
