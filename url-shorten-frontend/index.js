@@ -9,13 +9,13 @@ app.get('/', (_req, res) => res.sendFile(__dirname+'/index.html'))
 app.get('/:id', async (req, res) => {
     const { id } = req.params;
 
-    //insert to db
+    //get url
     const urlDB = deta.Base('urls');
     try {
         const url = await urlDB.get(id);
         return res.redirect(url.value);
     } catch (_error) {
-        // if error, then return conflict
+        // if error, then return 404 not found
         return res.sendStatus(404);
     }
 })
