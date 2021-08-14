@@ -3,4 +3,4 @@
 
 ### developed using deta.sh
 
-### Deployed to https://lkics0.deta.dev/ , try it
+### Deployed to https://pendek-kan.deta.dev/ , try it
